@@ -354,7 +354,6 @@ em {
 
 .stat:hover {
   background: rgba(255, 255, 255, 0.12);
-  transform: translateY(-4px);
   border-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -479,9 +478,7 @@ em {
 }
 
 .side-card:hover {
-  transform: translateY(-4px);
   box-shadow: 0 16px 32px -8px rgba(11, 27, 43, 0.12);
-  border-color: var(--accent);
 }
 
 .side-card h3 {
@@ -508,7 +505,6 @@ em {
 }
 
 .side-card li:hover {
-  padding-left: 0.5rem;
   color: var(--ink);
 }
 
@@ -768,9 +764,7 @@ em {
 }
 
 .project-tech span:hover {
-  background: var(--accent-glow);
   color: var(--accent);
-  border-color: var(--accent);
 }
 
 .project-link {
@@ -914,7 +908,6 @@ em {
 
 .certs-list li:hover {
   background: rgba(255, 255, 255, 0.5);
-  padding-left: 1.2rem;
 }
 
 .cert-name {
@@ -1069,7 +1062,6 @@ em {
 
 .contact-list li:hover {
   background: rgba(255, 255, 255, 0.05);
-  padding-left: 1rem;
 }
 
 .contact-list li:first-child {
