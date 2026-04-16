@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dheeraj Karanam — Data Scientist & Engineer. MS Data Science, Indiana University. Risk modeling, LLM applications, production data systems." />
+  <title>Dheeraj Karanam — Data Scientist & Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Figtree:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=8" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-brand">
+        <span class="brand-mark">DK</span>
+        <span class="brand-name">Dheeraj Karanam</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="hero">
+    <div class="hero-grid"></div>
+    <div class="container hero-inner">
+      <div class="hero-meta">
+        <span class="meta-dot"></span>
+        <span>Available for Summer 2026 internships</span>
+      </div>
+      <h1 class="hero-title">
+        From pipelines to <em>LLMs</em>.<br />
+        Engineering data that <em>thinks</em>.
+      </h1>
+      <p class="hero-sub">
+        I build reliable data platforms and apply statistical methods to problems in finance and applied research. Currently completing an MS in Data Science at Indiana University, with four years of prior enterprise experience at IBM and TCS.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View selected work</a>
+        <a href="resume.pdf" class="btn btn-ghost" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download résumé
+        </a>
+      </div>
+    </div>
+    <div class="container hero-stats">
+      <div class="stat">
+        <span class="stat-num">4+</span>
+        <span class="stat-label">Years enterprise<br/>data engineering</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">500+</span>
+        <span class="stat-label">ETL jobs migrated<br/>zero downtime</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">10M+</span>
+        <span class="stat-label">Rows processed<br/>in production</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">4.0</span>
+        <span class="stat-label">Graduate GPA<br/>Luddy, IU</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-body">
+          <p class="lede">
+            I'm a data scientist and engineer working at the intersection of statistical rigor and production systems.
+          </p>
+          <p>
+            My four years at IBM and TCS were spent inside large retail banking and telecommunications environments, where the cost of a broken pipeline is measured in missed SLAs and downstream analytics failures. I learned to design data quality frameworks, operate batch systems on Hadoop and Spark, and run zero-downtime migrations across hundreds of workflows. That work taught me something specific: the hardest part of machine learning in industry isn't the model, it's the data plumbing around it.
+          </p>
+          <p>
+            I'm now studying Data Science at Indiana University's Luddy School, focusing on applied machine learning, inference with statistics, and computer vision. My research with Professor David Crandall applies self-supervised representation learning (ResNet-18, contrastive objectives) to egocentric infant video, and a separate project with Professor Madurima benchmarks retrieval architectures for biomedical genomics question answering.
+          </p>
+          <p>
+            Outside of academic work, I build finance-focused portfolio projects like value-at-risk models, GARCH volatility forecasting, and RAG systems for SEC filings to bridge toward my longer-term goal of quantitative and ML work at a top financial institution.
+          </p>
+        </div>
+        <aside class="about-side">
+          <div class="side-card">
+            <h3>Focus areas</h3>
+            <ul>
+              <li>Quantitative finance and risk modeling</li>
+              <li>LLM applications (RAG, LoRA, tool orchestration)</li>
+              <li>Production data platforms</li>
+              <li>Self-supervised representation learning</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <article class="role">
+        <div class="role-meta">
+          <span class="role-period">Mar 2023 &mdash; Aug 2025</span>
+          <span class="role-location">Hyderabad, India</span>
+        </div>
+        <div class="role-body">
+          <h3 class="role-title">Data Engineer</h3>
+          <div class="role-company">IBM <span class="role-client">&mdash; Barclays Retail Banking</span></div>
+          <ul class="role-bullets">
+            <li>Designed and deployed scalable data quality frameworks (schema drift detection, null validation, outlier checks, row-count reconciliation) for distributed pipelines in Python and SQL; cut analyst debugging effort by 80% and established monitoring standards adopted across five teams.</li>
+            <li>Engineered batch data pipelines on Hadoop and Spark with Ab Initio, processing multi-million record retail banking datasets; built data models and Data Lake architectures with end-to-end lineage enabling downstream analytics and KPI forecasting for 5+ analytics teams.</li>
+            <li>Led zero-downtime platform migration of 108 workflows and 448 ETL jobs (Cloudera CDH to BDH, RHEL6 to RHEL8) via CI/CD pipelines; improved system performance by 25% and laid the foundation for cloud-native AWS migration.</li>
+            <li>Established data contracts and schema evolution strategies across three business units; automated Hadoop file operations with Python and Unix scripts, reducing manual effort by 75%.</li>
+            <li>Drove performance optimization through root-cause analysis, Spark job tuning, and code refactoring; collaborated cross-functionally in Agile environments to deliver production-grade systems on schedule.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role">
+        <div class="role-meta">
+          <span class="role-period">Jul 2019 &mdash; Feb 2023</span>
+          <span class="role-location">Chennai, India</span>
+        </div>
+        <div class="role-body">
+          <h3 class="role-title">Associate Software Engineer</h3>
+          <div class="role-company">Tata Consultancy Services <span class="role-client">&mdash; Virgin Media</span></div>
+          <ul class="role-bullets">
+            <li>Architected SCD Type 1 and Type 2 temporal data models for a Netezza-to-BigQuery Lakehouse migration across 645 tables; applied schema evolution principles ensuring backward compatibility and zero data loss during production cutover.</li>
+            <li>Optimized Apache Spark SQL transformations (partition pruning, predicate pushdown, clustering rewrites) on GCP BigQuery, compressing a 14-hour batch pipeline to 12 hours.</li>
+            <li>Maintained 99% SLA and 99.5% uptime across batch and near-real-time pipelines; recovered 50+ failed critical jobs in Control-M by implementing error-handling and monitoring protocols.</li>
+            <li>Built Tableau and Power BI dashboards translating pipeline metrics into actionable insights for non-technical business leadership.</li>
+            <li>Achieved 90% F1 accuracy on an NLP chatbot (Rasa NLU/Core) with REST API integration on AWS; deployed to production and presented at client town hall, driving adoption across two additional teams.</li>
+            <li>Trained and guided six junior associates in data warehouse concepts, ETL workflow design, and production support.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Selected projects</h2>
+      </div>
+
+      <div class="projects">
+
+        <article class="project">
+          <div class="project-img-wrap">
+            <img class="project-img" src="image_rag.png" alt="Financial Insight System Architecture" loading="lazy" />
+          </div>
+          <div class="project-head">
+            <span class="project-tag">LLM · RAG · Fine-tuning</span>
+            <h3 class="project-title">Financial Insight System</h3>
+            <p class="project-blurb">Portfolio analytics platform combining RAG retrieval, LoRA-fine-tuned narrative generation, and MCP tool orchestration for SEC filing analysis.</p>
+          </div>
+          <ul class="project-bullets">
+            <li>Built an end-to-end pipeline ingesting and parsing financial documents (JSON, PDF) with schema-aligned extraction, confidence scoring, and data quality validation across SEC filings.</li>
+            <li>Benchmarked retrieval approaches (dense embeddings vs. TF-IDF) for response accuracy and inference stability; integrated MCP for tool-augmented query resolution.</li>
+            <li>Developed a FastAPI backend and evaluation dashboard tracking retrieval accuracy and output quality metrics (BERTScore, F1).</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>FastAPI</span><span>PyTorch</span><span>LoRA</span><span>MCP</span><span>HuggingFace</span>
+          </div>
+          <a class="project-link" href="https://github.com/Dheeraj31104/finance_rag_lora_mcp" target="_blank" rel="noopener">
+            View repository
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </article>
+
+        <article class="project">
+          <div class="project-img-wrap">
+            <img class="project-img" src="image.png" alt="GARCH vs LSTM VaR Comparison" loading="lazy" />
+          </div>
+          <div class="project-head">
+            <span class="project-tag">Quant Finance · Risk</span>
+            <h3 class="project-title">Risk Modeling &amp; Portfolio Analysis</h3>
+            <p class="project-blurb">Benchmarking study of six Value-at-Risk methodologies on a ten-asset equity portfolio, validated with formal statistical tests.</p>
+          </div>
+          <ul class="project-bullets">
+            <li>Implemented and compared Parametric, Historical, Monte Carlo, Student-t, Cornish-Fisher, and GARCH VaR methods over 1,255 trading days; validated every model with Kupiec likelihood-ratio hypothesis tests.</li>
+            <li>Demonstrated GARCH VaR captured a 5.2&times; volatility range versus static estimates, exposing a $3,300 per-$100k risk gap during the 2025 volatility spike that fixed-window models missed entirely.</li>
+            <li>Delivered structured findings with actionable insights for downstream risk decision-making.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>NumPy</span><span>Pandas</span><span>SciPy</span><span>arch</span><span>yfinance</span>
+          </div>
+          <a class="project-link" href="https://github.com/Dheeraj31104/Risk-Modeling-Portfolio-Analysis" target="_blank" rel="noopener">
+            View repository
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span class="project-tag">Research · NLP · Biomedical</span>
+            <h3 class="project-title">CAG vs RAG Evaluation Framework</h3>
+            <p class="project-blurb">End-to-end evaluation pipeline comparing three retrieval architectures for information extraction from medical genomics documents.</p>
+          </div>
+          <ul class="project-bullets">
+            <li>Designed a reproducible benchmarking framework comparing RAG, CAG, and CRAG across transformer-based models; implemented confidence scoring, hallucination rate measurement, and automated validation.</li>
+            <li>Executed on BigRed200 HPC (SLURM, A100 GPUs) using LangChain, FAISS, and HuggingFace Transformers with consistent data quality controls across all model outputs.</li>
+            <li>Conducted under the guidance of Professor Madurima at Indiana University.</li>
+          </ul>
+          <div class="project-tech">
+            <span>LangChain</span><span>FAISS</span><span>HuggingFace</span><span>SLURM</span><span>A100 GPUs</span>
+          </div>
+          <span class="project-note">Research project &middot; IU</span>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span class="project-tag">Computer Vision · SSL</span>
+            <h3 class="project-title">Self-Supervised Representation Learning</h3>
+            <p class="project-blurb">Large-scale deep learning pipeline applying temporal contrastive learning to egocentric video frames on HPC infrastructure.</p>
+          </div>
+          <ul class="project-bullets">
+            <li>Built a self-supervised training pipeline (ResNet-18, CLTT contrastive loss) processing 50K+ egocentric video frames on IU BigRed200 (A100 GPUs, SLURM).</li>
+            <li>Designed a systematic ablation framework varying batch size, learning rate, and augmentation to evaluate representation quality.</li>
+            <li>Implemented kNN retrieval and linear probe evaluation harness to measure downstream pipeline quality across experimental configurations.</li>
+          </ul>
+          <div class="project-tech">
+            <span>PyTorch</span><span>ResNet-18</span><span>Contrastive Learning</span><span>kNN</span><span>SLURM</span>
+          </div>
+          <a class="project-link" href="https://github.com/Dheeraj31104/cltt_bigred" target="_blank" rel="noopener">
+            View repository
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Education &amp; Credentials</h2>
+      </div>
+
+      <div class="edu-grid">
+        <article class="edu">
+          <div class="edu-period">Aug 2025 &mdash; May 2027</div>
+          <h3 class="edu-school">Indiana University Bloomington</h3>
+          <div class="edu-degree">M.S. in Data Science</div>
+          <div class="edu-dept">Luddy School of Informatics, Computing, and Engineering</div>
+          <div class="edu-courses">
+            Applied Machine Learning · Inference with Statistics · Computer Vision
+          </div>
+        </article>
+
+        <article class="edu">
+          <div class="edu-period">Aug 2015 &mdash; Apr 2019</div>
+          <h3 class="edu-school">Andhra University</h3>
+          <div class="edu-degree">B.Tech, Electronics and Communication Engineering</div>
+          <div class="edu-dept">College of Engineering, Visakhapatnam</div>
+        </article>
+      </div>
+
+      <div class="certs">
+        <h3 class="certs-title">Certifications</h3>
+        <ul class="certs-list">
+          <li><span class="cert-name">Machine Learning with Python</span><span class="cert-issuer">MITx &middot; 2024</span></li>
+          <li><span class="cert-name">Fundamentals of Statistics</span><span class="cert-issuer">MITx &middot; 2024</span></li>
+          <li><span class="cert-name">Probability — The Science of Uncertainty</span><span class="cert-issuer">MITx &middot; 2024</span></li>
+          <li><span class="cert-name">Python for Data Science</span><span class="cert-issuer">IBM &middot; 2023</span></li>
+        </ul>
+      </div>
+
+      <div class="skills">
+        <h3 class="skills-title">Technical toolkit</h3>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4>Programming</h4>
+            <p>Python (Pandas, NumPy, SciPy, FastAPI), SQL, R</p>
+          </div>
+          <div class="skill-group">
+            <h4>ML &amp; AI</h4>
+            <p>PyTorch, Scikit-learn, XGBoost, HuggingFace, RAG, LoRA, LLM APIs</p>
+          </div>
+          <div class="skill-group">
+            <h4>Data Engineering</h4>
+            <p>Apache Spark/PySpark, Airflow, SCD Type 1/2 modeling, Data Quality &amp; Reconciliation, ETL/ELT, Data Lineage</p>
+          </div>
+          <div class="skill-group">
+            <h4>Platforms</h4>
+            <p>Databricks, Snowflake, BigQuery, AWS, GCP, Kafka, Iceberg</p>
+          </div>
+          <div class="skill-group">
+            <h4>ETL &amp; Databases</h4>
+            <p>Ab Initio, Informatica, Oracle, Teradata, Netezza, Hive, HDFS</p>
+          </div>
+          <div class="skill-group">
+            <h4>Engineering</h4>
+            <p>CI/CD, Git, Docker, Linux/Unix, Control-M, Jira, Agile</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-lede">
+          <h3>Let's talk.</h3>
+          <p>I'm actively interviewing for Summer 2026 internships in data science, machine learning, and quantitative roles. Open to referrals, research collaborations, and conversations about applied ML in finance.</p>
+        </div>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:karanamdheeraj2024@gmail.com">karanamdheeraj2024@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">Phone</span>
+            <a href="tel:+19453675375">(945) 367-5375</a>
+          </li>
+          <li>
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://linkedin.com/in/karanamdheeraj" target="_blank" rel="noopener">linkedin.com/in/karanamdheeraj</a>
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/Dheeraj31104" target="_blank" rel="noopener">github.com/Dheeraj31104</a>
+          </li>
+          <li>
+            <span class="contact-label">Location</span>
+            <span>United States</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Scroll reveal
+    document.querySelectorAll('.section-head, .role, .project, .edu, .side-card, .skill-group, .certs-list, .contact-grid').forEach(el => {
+      el.classList.add('reveal');
+    });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Active nav highlighting
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const top = section.offsetTop - 120;
+        if (scrollY >= top) current = section.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+      });
+    });
+  </script>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">DK</span>
+        <span>Dheeraj Karanam</span>
+      </div>
+      <div class="footer-meta">
+        <span>&copy; 2026 Dheeraj Karanam.</span>
+        <span class="footer-dot">&middot;</span>
+        <span>Built with restraint.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
