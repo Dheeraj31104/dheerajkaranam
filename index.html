@@ -42,7 +42,7 @@
         Engineering data that <em>thinks</em>.
       </h1>
       <p class="hero-sub">
-        I build reliable data platforms and apply statistical methods to problems in finance and applied research. Currently completing an MS in Data Science at Indiana University, with four years of prior enterprise experience at IBM and TCS.
+        I build reliable data platforms and apply statistical methods to problems in finance and applied research. Currently pursuing an MS in Data Science at Indiana University, with more than four years of prior enterprise experience at IBM and TCS.
       </p>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">View selected work</a>
@@ -88,7 +88,7 @@
             My four years at IBM and TCS were spent inside large retail banking and telecommunications environments, where the cost of a broken pipeline is measured in missed SLAs and downstream analytics failures. I learned to design data quality frameworks, operate batch systems on Hadoop and Spark, and run zero-downtime migrations across hundreds of workflows. That work taught me something specific: the hardest part of machine learning in industry isn't the model, it's the data plumbing around it.
           </p>
           <p>
-            I'm now studying Data Science at Indiana University's Luddy School, focusing on applied machine learning, inference with statistics, and computer vision. My research with Professor David Crandall applies self-supervised representation learning (ResNet-18, contrastive objectives) to egocentric infant video, and a separate project with Professor Madurima benchmarks retrieval architectures for biomedical genomics question answering.
+            I'm now studying Data Science at Indiana University's Luddy School, focusing on applied machine learning, inference with statistics, and computer vision. My research applies self-supervised representation learning (ResNet-18, contrastive objectives) to egocentric infant video, and a separate project with Professor Madurima benchmarks retrieval architectures for biomedical genomics question answering.
           </p>
           <p>
             Outside of academic work, I build finance-focused portfolio projects like value-at-risk models, GARCH volatility forecasting, and RAG systems for SEC filings to bridge toward my longer-term goal of quantitative and ML work at a top financial institution.
@@ -382,10 +382,15 @@
 
     window.addEventListener('scroll', () => {
       let current = '';
-      sections.forEach(section => {
-        const top = section.offsetTop - 120;
-        if (scrollY >= top) current = section.getAttribute('id');
-      });
+      // If scrolled to bottom, highlight last section
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 2) {
+        current = sections[sections.length - 1].getAttribute('id');
+      } else {
+        sections.forEach(section => {
+          const top = section.offsetTop - 120;
+          if (scrollY >= top) current = section.getAttribute('id');
+        });
+      }
       navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === '#' + current) link.classList.add('active');
